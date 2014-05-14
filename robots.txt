@@ -1,0 +1,11 @@
+User-agent: moget
+Disallow: /js/
+Disallow: /css/
+Disallow: /CustomGoogle/
+Disallow: /CustomGoogle.html
+
+User-agent: Googlebot
+Disallow: /js/
+Disallow: /css/
+Disallow: /CustomGoogle/
+Disallow: /CustomGoogle.html
