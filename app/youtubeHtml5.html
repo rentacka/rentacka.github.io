@@ -1,0 +1,86 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+<body>
+
+<div id="player"></div>
+<script>
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "http://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    var done = false;
+    var player;
+    var loadCount = 0;
+    
+    // プレーヤー API 用の JavaScript のダウンロードが完了
+    function onYouTubePlayerAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'JW5meKfy3fY',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+    }
+    function onPlayerReady(evt) {
+        Play('4b3-uwgV3IA');
+
+        //evt.target.playVideo();
+    }
+    
+    function onPlayerStateChange(evt) {
+        /*
+    	// 6秒後にプレイヤーを停止。
+        if (evt.data == YT.PlayerState.PLAYING && !done) {
+            setTimeout(stopVideo, 6000);
+            // 一度しか実行しないよう設定
+            done = true;
+        }*/
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+    function Play(target)
+    {
+        if (loadCount > 4) {
+            loadCount = 0;
+
+            //player = void 0;
+
+            // インラインフレームのIDが変わるのでPlayerが動かなくなる。
+            //onYouTubePlayerAPIReady();
+        }
+
+        // 自動再生(iOSやAndroidでは無効。一度クリックする必要がある)
+        // document.getElementById("player")
+        player.loadVideoById(target);
+
+        loadCount++;
+    }
+
+	// ボタン制御    
+	$(function(){
+		$("button").click( function(){
+			url = $("input").val();
+			id = url.split("watch?v=")[1];
+			src = "https://www.youtube.com/embed/" + id;
+      
+			Play(id);
+		});
+	});
+</script>
+<div>
+  <!--ここにYouTubeのURLを入力してください。-->
+  <input type="text" value="http://www.youtube.com/watch?v=4b3-uwgV3IA">
+  <button>URL読み込み</button>
+</div>
+
+</body>
+</html> 
