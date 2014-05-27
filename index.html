@@ -1,91 +1,97 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>site44 - absurdly simple web hosting</title>
-	<link rel="stylesheet" type="text/css" media="screen,print" href="/css/zeroshiki.css" />
-	<style type="text/css">
-	.auto-style2 {
-		border-style: solid;
-		border-width: 1px;
-	}
-	.auto-style3 {
-	border-width: 0px;
-}
-.auto-style5 {
-	font-size: large;
-}
-	</style>
+    <meta charset="utf-8" />
+    <title>site44 - absurdly simple web hosting</title>
+    <link rel="stylesheet" type="text/css" media="screen,print" href="/css/zeroshiki.css" />
+    <style type="text/css">
+        .auto-style2 {
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .auto-style3 {
+            border-width: 0px;
+        }
+
+        .auto-style5 {
+            font-size: large;
+        }
+    </style>
 </head>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://dl.dropboxusercontent.com/s/k3gqfacw3n3jn08/jquery.zrssfeed.min.js"></script>
 <script type="text/javascript">
-$(function(){
-	$('#feed').rssfeed('https://dl.dropboxusercontent.com/s/6pbi4vfjrry7b3o/atom.xml',{
-    limit: 8
-	});
-});
+    $(function () {
+        $('#feed').rssfeed('https://dl.dropboxusercontent.com/s/6pbi4vfjrry7b3o/atom.xml', {
+            limit: 8
+        });
+    });
 </script>
 
 <body>
-			<div>
-				<h2 style="margin-bottom: 10px">Welcome to 
+    <div>
+        <h2 style="margin-bottom: 10px">Welcome to 
 				<a href="http://rentacka.github.io/">rentacka.github.io</a>.</h2>
-			</div>
+    </div>
+    
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <p>
+                    <!--a href="http://rtfeeddriver.hateblo.jp/http://rtfeeddriver.hateblo.jp/">はてな</a-->
+                </p>
+                <p>
+                    <!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a-->
+                </p>
+                <p>
+                    <a href="https://www.evernote.com/pub/rentacka/rentacka.site44.com">
+                        <span class="auto-style5">ブログと更新ソフト</span></a><span class="auto-style5">
+                        </span>
+                </p>
+                <p>
+                    <a href="https://sites.google.com/site/creatorheaderterminal/">
+                        <span class="auto-style5">旧サイト</span></a>
+                </p>
+            </td>
+            <td>
+                <p>
+                    <a class="twitter-timeline" href="https://twitter.com/Ren_Tacka" data-widget-id="461075230534803456">@Ren_Tacka からのツイート</a>
+                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                </p>
+            </td>
+            <td>
+                <p>&nbsp;</p>
+                <!--embed src="http://rentacka.site44.com/mikuclock.swf" width="150" height="180"/-->
+                <p>
+                    <embed src="https://dl.dropboxusercontent.com/s/v93ngty17yei7ii/mikuclock.swf" width="150" height="180" />
+                </p>
+                <p><a href="http://nekokan.easter.ne.jp/flush/mikuclock.html">mikuclock</a></p>
+            </td>
+        </tr>
+    </table>
 
+    <table class="auto-style2" style="width: 100%">
+        <tr>
+            <td>
+                <!--Pixivの漫画埋め込み-->
+                <!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a-->
+                <p><a href="/app/youtubeHtml5.html">アプリテスト１:iFrame-Html5_Only</a></p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p><a href="/app/youtubeIframe.html">アプリテスト2：iFrame-Html5_GoogleApi</a></p>
 
-			<table  style="width:100%;">
-                <tr>
-                    <td>
-                        <p>
-                       	<!--a href="http://rtfeeddriver.hateblo.jp/http://rtfeeddriver.hateblo.jp/">はてな</a-->
-                       	</p>
-                       	<p>
-                   		<!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a-->
-                       	</p>
-                       	<p>
-                   		<a href="https://www.evernote.com/pub/rentacka/rentacka.site44.com">
-                   		<span class="auto-style5">ブログと更新ソフト</span></a><span class="auto-style5">
-                   		</span>
-                       	</p>
-                       	<p>
-                   		<a href="https://sites.google.com/site/creatorheaderterminal/">
-                   		<span class="auto-style5">旧サイト</span></a>
-                       	</p>
-                    </td>
-                    <td>
-                        <p><a class="twitter-timeline" href="https://twitter.com/Ren_Tacka" data-widget-id="461075230534803456">@Ren_Tacka からのツイート</a>
-                		<script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script></p>
-                    </td>
-                    <td>
-                        <p>&nbsp;</p>
-                		<!--embed src="http://rentacka.site44.com/mikuclock.swf" width="150" height="180"/-->
-                		<p>
-            			<embed src="https://dl.dropboxusercontent.com/s/v93ngty17yei7ii/mikuclock.swf" width="150" height="180"/>
-                		</p>
-                		<p><a href="http://nekokan.easter.ne.jp/flush/mikuclock.html">mikuclock</a></p>
-                    </td>
-                </tr>
-            </table>
-
-			<table class="auto-style2" style="width: 100%">
-				<tr>
-					<td><!--Pixivの漫画埋め込み-->		<!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a-->
-					<p><a href="/app/youtubeHtml5.html">アプリテスト１:iFrame-Html5_Only</a></p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    <p><a href="/app/youtubeIframe.html">アプリテスト2：iFrame-Html5_GoogleApi</a></p>
-
-					</td>
-					<td>
-						<p>
-						<a href="https://dl.dropboxusercontent.com/s/6pbi4vfjrry7b3o/atom.xml">
-						<img alt="" height="58" src="https://dl.dropboxusercontent.com/s/58m1eyqk98gkxwi/feed-icon2dropxac-58x58.png" width="58" class="auto-style3"></a><span class="auto-style5">
-	                	</span>
-   						</p>
-						<div id="feed"></div>	</td>
-				</tr>
-			</table>
-	</body>
-	</html>
+            </td>
+            <td>
+                <p>
+                    <a href="https://dl.dropboxusercontent.com/s/6pbi4vfjrry7b3o/atom.xml">
+                        <img alt="" height="58" src="https://dl.dropboxusercontent.com/s/58m1eyqk98gkxwi/feed-icon2dropxac-58x58.png" width="58" class="auto-style3"></a><span class="auto-style5">
+                        </span>
+                </p>
+                <div id="feed"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
