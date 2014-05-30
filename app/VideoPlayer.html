@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+    <script>
+        function clickfunc() {
+            var tag = '<video width="480" height="270" loop="loop" autoplay="autoplay" controls="controls"><p>このブラウザでは対応しておりません。IE9/Forefox/Chrome/Safari等をご利用ください。</p>';
+
+            tag += '<source src="' + '【IA】ワールド・コーリング【オリジナルPV】' + '.mp4"/>';
+            tag += '<source src="' + '【IA】ワールド・コーリング【オリジナルPV】' + '.mp4"/>';
+            tag += '</video>';
+
+            // canvasタグでVideoタグの機能のボタン化?
+            // 試作版はボタンだけでいい
+
+            $("#video").html(tag);
+        }
+    </script>
+</head>
+<body>
+    <canvas></canvas>
+    <div id="video">
+        <video width="480" height="270" loop="loop" autoplay="autoplay" controls="controls">
+            <p>このブラウザでは対応しておりません。IE9/Forefox/Chrome/Safari等をご利用ください。</p>
+            <source src='【IA】ワールド・コーリング【オリジナルPV】.mp4' type='video/mp4' />
+            <source src='【IA】ワールド・コーリング【オリジナルPV】.mp4' type='video/mp4' />
+        </video>
+    </div>
+
+    <input id="Button1" type="button" value="button" onclick="clickfunc()" />
+</body>
+</html>
