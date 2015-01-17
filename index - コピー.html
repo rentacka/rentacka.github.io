@@ -13,6 +13,9 @@
         .auto-style5 {
             font-size: large;
         }
+    .auto-style6 {
+	font-size: xx-small;
+}
     .auto-style7 {
 	text-align: center;
 }
@@ -20,30 +23,6 @@
 	border-width: 0px;
 }
     </style>
-	<script type="text/javascript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-// -->
-</script>
 </head>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
@@ -56,7 +35,7 @@ function FP_getObjectByID(id,o) {//v1.0
     });
 </script-->
 
-<body onload="FP_preloadImgs(/*url*/'images/button2E.jpg',/*url*/'images/button2F.jpg',/*url*/'images/button33.jpg',/*url*/'images/button34.jpg',/*url*/'images/button45.jpg',/*url*/'images/button46.jpg')">
+<body>
     <div>
         <h2 style="margin-bottom: 10px">Welcome to 
 				<a href="http://rentacka.github.io/">rentacka.github.io</a>.</h2>
@@ -69,15 +48,21 @@ function FP_getObjectByID(id,o) {//v1.0
                     
                 </p>
                 <p><!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a--></p>
+                <p>
+                    <a href="https://www.evernote.com/pub/rentacka/rentacka.site44.com">
+                        <span class="auto-style5">ブログと更新ソフト</span></a><span class="auto-style5">
+                        </span>
+                </p>
 				<p>
-                    <a href="http://www.pixiv.net/member_illust.php">
-					<img id="img2" alt="漫画:Pixiv" fp-style="fp-btn: Embossed Capsule 4" fp-title="漫画:Pixiv" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/button46.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/button44.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'images/button45.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'images/button45.jpg')" src="images/button44.jpg" style="border: 0" width="100"></a></p>
-                
-				<p>
-				<a href="https://sites.google.com/site/creatorheaderterminal/">
-				<img id="img1" alt="旧サイト" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button34.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button32.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'images/button33.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'images/button33.jpg')" src="images/button32.jpg" style="border: 0" width="100"></a></p>
+                    &nbsp;</p>
+                <p><a href="http://www.pixiv.net/member.php?id=2569378">作品一覧</p>
+				<p><a href="http://www.pixiv.net/member.php?id=2569378"></a--></p>
+                <p>
+                    <a href="https://sites.google.com/site/creatorheaderterminal/">
+                        <span class="auto-style5">旧サイト</span></a>
+                </p>
             </td>
-            <td style="font-size: large">
+            <td>
                 <p>
                     <a class="twitter-timeline" href="https://twitter.com/Ren_Tacka" data-widget-id="461075230534803456">@Ren_Tacka からのツイート</a>
                     <script type="">!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
@@ -106,10 +91,9 @@ function FP_getObjectByID(id,o) {//v1.0
                         </span>
                 </p-->
                 <!--div id="feed"></div-->
-                <p>ブログディレクトリ：更新日時順</p>
+                <p><span class="auto-style6">＊下のリンクでみれないときは</span><a href="https://www.evernote.com/pub/rentacka/rentacka.site44.com"><span class="auto-style6">こちら</span></a><span class="auto-style6">より</span></p>
                 <p>
-                
-				<iframe id="I1" name="I1" width="520" height="320" src="blogs/">お使いのブラウザはインライン フレームをサポートしていないか、またはインライン フレームを表示しないように設定されています。
+				<iframe id="I1" name="I1" width="520" height="320" src="https://dl.dropboxusercontent.com/s/d7es2tao4cbmxd4/evernote_page_list.html">お使いのブラウザはインライン フレームをサポートしていないか、またはインライン フレームを表示しないように設定されています。
 				</iframe></p>
             </td>
         </tr>
