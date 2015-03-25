@@ -5,17 +5,28 @@
     <title>github - absurdly simple web hosting</title>
     <link rel="stylesheet" type="text/css" media="screen,print" href="/css/zeroshiki.css" />
     <style type="text/css">
-        .auto-style2 {
-            border-style: solid;
-            border-width: 1px;
-        }
-
+        
         .auto-style7 {
 	text-align: center;
 }
 .auto-style8 {
 	border-width: 0px;
 }
+
+#CenterPage
+    {
+     margin:0px;          /* ページ全体のmargin */
+     padding:0px;         /* ページ全体のpadding */
+     text-align:center;   /* 下記のautoに未対応用のセンタリング */
+    }
+    
+#main
+    {
+     margin-left:auto;    /* 左側マージンを自動的に空ける */
+     margin-right:auto;   /* 右側マージンを自動的に空ける */
+     text-align:left;     /* 中身を左側表示に戻す */
+     width:650px;         /* 幅を決定する */
+    }
     </style>
 	<script type="text/javascript">
 <!--
@@ -43,7 +54,7 @@ function FP_getObjectByID(id,o) {//v1.0
 </script>
 </head>
 
-<body onload="FP_preloadImgs(/*url*/'images/button2E.jpg',/*url*/'images/button2F.jpg',/*url*/'images/button12.jpg',/*url*/'images/button13.jpg',/*url*/'images/button6.jpg',/*url*/'images/button7.jpg',/*url*/'images/button9.jpg',/*url*/'images/buttonA.jpg')">
+<body onload="FP_preloadImgs(/*url*/'images/button2E.jpg',/*url*/'images/button2F.jpg',/*url*/'images/button6.jpg',/*url*/'images/button7.jpg',/*url*/'images/button9.jpg',/*url*/'images/buttonA.jpg',/*url*/'images/button1A.jpg',/*url*/'images/button1B.jpg')">
     <div>
         <h2 style="margin-bottom: 10px">Welcome to 
 				<a href="http://rentacka.github.io/">rentacka.github.io</a>.</h2>
@@ -54,16 +65,17 @@ function FP_getObjectByID(id,o) {//v1.0
             <td>
                 <p>
                     
+                <a href="file:///F:/Mydocument/GitHub/rentacka.github.io/index.html">
+				<img id="img8" alt="ブログ" fp-style="fp-btn: Glass Capsule 1" fp-title="ブログ" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'images/button1B.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'images/button19.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'images/button1A.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'images/button1A.jpg')" src="images/button19.jpg" style="border: 0" width="100"></a></p>
+				<p>
+                     &nbsp;
                 </p>
-                <p>
-				<a href="http://www.pixiv.net/mypage.php#id=2569378">
-				<img id="img6" alt="Pixiv" fp-style="fp-btn: Embossed Capsule 2" fp-title="Pixiv" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button7.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button5.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button6.jpg')" src="images/button5.jpg" style="border: 0" width="100"></a></p>
+                <p><!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a--><a href="http://www.pixiv.net/mypage.php#id=2569378"><img id="img6" alt="Pixiv" fp-style="fp-btn: Embossed Capsule 2" fp-title="Pixiv" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button7.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button5.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button6.jpg')" src="images/button5.jpg" style="border: 0" width="100"></a></p>
+				<p>
+                    &nbsp;</p>
                 
 				<p>
-				&nbsp;</p>
-				<p>
-				<a href="https://sites.google.com/site/creatorheaderterminal/copyright-2010-rentacka-all-rights-reserved-1">
-				<img id="img7" alt="旧サイト" fp-style="fp-btn: Embossed Capsule 5" fp-title="旧サイト" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/buttonA.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button8.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button9.jpg')" src="images/button8.jpg" style="border: 0" width="100"></a></p>
+				<a href="https://sites.google.com/site/creatorheaderterminal/copyright-2010-rentacka-all-rights-reserved-1"><img id="img7" alt="旧サイト" fp-style="fp-btn: Embossed Capsule 5" fp-title="旧サイト" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/buttonA.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button8.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button9.jpg')" src="images/button8.jpg" style="border: 0" width="100"></a></p>
             </td>
             <td style="font-size: large">
                 <p>
@@ -74,45 +86,26 @@ function FP_getObjectByID(id,o) {//v1.0
             <td>
                 <p>&nbsp;</p>
                 <!--embed src="http://rentacka.site44.com/mikuclock.swf" width="150" height="180"/-->
-                <p>
-                    &nbsp;</p>
             </td>
         </tr>
-    </table>
-
-    <table class="auto-style2" style="width: 100%">
-        <tr>
-            <td style="height: 289px">
-					<p class="header">&nbsp;<span><a href="TestWeb/TestWeb.html">UnityTestGame</a></span></p>
-					<p class="header"><span>（いつか完成する・・・？ｗ）</span></p>
-					<p class="header">&nbsp;</p>
-					<p class="header">Webサービス開発中・・・</p>
-					<p class="header">別サイトにて完成したら</p>
-					<p class="header">リンクするかも・・・ｗ</p>
-				</td>
-            <td style="height: 289px">
-                <!--p>
-                    <a href="https://dl.dropboxusercontent.com/s/6pbi4vfjrry7b3o/atom.xml">
-                        <img alt="" height="58" src="https://dl.dropboxusercontent.com/s/58m1eyqk98gkxwi/feed-icon2dropxac-58x58.png" width="58" class="auto-style3"></a><span class="auto-style5">
-                        </span>
-                </p-->
-                <!--div id="feed"></div-->
-                <p>&nbsp;<a href="http://rentacka.github.io/"><img id="img3" alt="トップブログ" fp-style="fp-btn: Glass Tab 1" fp-title="トップブログ" height="33" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/button13.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/button11.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'images/button12.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'images/button12.jpg')" src="images/button11.jpg" style="border: 0" width="100"></a></p>
+    </table>    
+    
+    <div id="CenterPage">
+    <div id ="main">
                 <p>
                 
-				<iframe id="I1" name="I1" width="520" height="320" src="atom.html">お使いのブラウザはインライン フレームをサポートしていないか、またはインライン フレームを表示しないように設定されています。
+				<iframe id="I1" name="I1" width="1000" height="6000"  frameborder="no" src="atom.html">お使いのブラウザはインライン フレームをサポートしていないか、またはインライン フレームを表示しないように設定されています。
 				</iframe></p>
- <a href="atom.xml"><img src="images/943.png" alt="RSS" width="256px" height="256px" ></a>
-             </td>
-        </tr>
-        <tr>
-            <td style="height: 289px">
-					&nbsp;</td>
-            <td style="height: 289px">
-                &nbsp;</td>
-        </tr>
-    </table>
-	<p class="auto-style7"><a href="https://sites.google.com/site/happybusy/">
+ &nbsp;<p class="auto-style7"><a href="atom.xml">
+				<img src="images/943.png" alt="RSS" width="245" height="243" ></a></p>
+    </div>
+    </div>
+	<p class="auto-style7">
+                    
+                &nbsp;</p>
+	<p class="auto-style7">
+                    
+                <a href="https://sites.google.com/site/happybusy/">
 	<img class="auto-style8" height="40" src="busy_banner.png" width="200"></a></p>
 </body>
 </html>
