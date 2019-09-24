@@ -1,11 +1,8 @@
-User-agent: moget
+User-agent:*
 Disallow: /js/
 Disallow: /css/
-Disallow: /CustomGoogle/
-Disallow: /CustomGoogle.html
-
-User-agent: Googlebot
-Disallow: /js/
-Disallow: /css/
-Disallow: /CustomGoogle/
-Disallow: /CustomGoogle.html
+Disallow: /images/
+Disallow: /javascripts/
+Disallow: /stylesheets/
+Disallow: /TestWeb/
+Disallow: /TestWebGame/
