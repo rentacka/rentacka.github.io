@@ -30,31 +30,15 @@
     </style>
 	<script type="text/javascript">
 <!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
 function FP_preloadImgs() {//v1.0
  var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
  for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
 }
 // -->
 </script>
 </head>
 
-<body onload="FP_preloadImgs(/*url*/'images/button2E.jpg',/*url*/'images/button2F.jpg',/*url*/'images/button6.jpg',/*url*/'images/button7.jpg',/*url*/'images/button9.jpg',/*url*/'images/buttonA.jpg')">
+<body onload="FP_preloadImgs(/*url*/'images/button2E.jpg',/*url*/'images/button2F.jpg',/*url*/'button9.jpg',/*url*/'buttonA.jpg')">
     <div>
         <h2 style="margin-bottom: 10px">Welcome to 
 				<a href="http://rentacka.github.io/">rentacka.github.io</a>.</h2>
@@ -62,21 +46,27 @@ function FP_getObjectByID(id,o) {//v1.0
     
     <table style="width: 100%; font-size: large;">
         <tr>
-            <td>
-				<p>&nbsp;</p>
-                <p><!--a href="http://www.nicovideo.jp/user/24513560http://www.nicovideo.jp/user/24513560">ニコニコ</a--><a href="http://www.pixiv.net/mypage.php#id=2569378"><img id="img6" alt="Pixiv" fp-style="fp-btn: Embossed Capsule 2" fp-title="Pixiv" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button7.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button5.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img6',/*url*/'images/button6.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img6',/*url*/'images/button6.jpg')" src="images/button5.jpg" style="border: 0" width="100"></a></p>
-				<p>
-                    &nbsp;</p>
-                
-				<p>
-				<a href="https://sites.google.com/site/creatorheaderterminal/copyright-2010-rentacka-all-rights-reserved-1"><img id="img7" alt="旧サイト" fp-style="fp-btn: Embossed Capsule 5" fp-title="旧サイト" height="35" onmousedown="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/buttonA.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button8.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img7',/*url*/'images/button9.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img7',/*url*/'images/button9.jpg')" src="images/button8.jpg" style="border: 0" width="100"></a></p>
+            <td bgcolor="#FFFF99">
+                <div><a href="https://ncode.syosetu.com/n5322fo/">なろう</a> 
+					小説書いております<br>
+					<a href="https://www.pixiv.net/fanbox/creator/2569378">Pixiv</a> 
+					準備中・・・</div>
+				
             </td>
             <td style="font-size: large">
                 <p>
-                    <a class="twitter-timeline" href="https://twitter.com/Ren_Tacka" data-widget-id="461075230534803456">@Ren_Tacka からのツイート</a>
+                    <a class="twitter-timeline" href="https://twitter.com/Ren_Tacka" data-widget-id="461075230534803456">
+					マネーコイコイさんのツイート</a>
                     <script type="">!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
                 </p>
             </td>
+        </tr>
+        <tr>
+            <td bgcolor="#C0C0C0">
+                <a href="https://sites.google.com/site/creatorheaderterminal/home">
+				旧サイト</a></td>
+            <td style="font-size: large">
+                <a href="atom_blogs.html">2015</a></td>
         </tr>
     </table>    
     
